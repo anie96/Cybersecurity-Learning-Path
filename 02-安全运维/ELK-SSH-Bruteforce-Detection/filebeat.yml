@@ -1,0 +1,13 @@
+filebeat.inputs:
+  - type: filestream
+    paths:
+      - /var/log/auth.log
+    fields:
+      log_type: ssh-log
+
+output.logstash:
+  hosts: ["localhost:5044"]
+
+# 关闭无关模块，避免干扰
+setup.ilm.enabled: false
+setup.template.enabled: false

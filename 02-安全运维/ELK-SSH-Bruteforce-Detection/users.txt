@@ -1,0 +1,8 @@
+root
+admin
+test
+user
+oracle
+postgres
+ubuntu
+wronguser
